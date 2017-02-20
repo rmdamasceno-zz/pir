@@ -1,0 +1,3 @@
+[04-Feb-2017 19:42:56 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 7
+[05-Feb-2017 00:14:02 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 7
+[05-Feb-2017 08:12:48 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 7

@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color:3f3f3f;
+}
+
+header ,header a{
+	background-color:3f3f3f;
+	text-decoration: none;
+	position: relative;
+	top: 0px;
+	width: 100%;
+	/* padding: 8px; */
+	margin: -6px 0px 0px -6px;
+	color:#CC9933;
+	font-size:24px;
+	font-weight:100;
+	font-family:"Arial Black", Gadget, sans-serif;
+	text-align: center;
+	text-transform:uppercase;
+}
+
+div#popup {
+	display:block;
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:200px;
+	height:66px;
+    background-color: #EEEEEE;
+	border: solid 2px #aaa;
+	font-size:13px;
+}
+
+div#popup a{
+	text-decoration:underline;
+	color:#222;
+}
+
+div#popup span#sair a{
+	display:block;
+	bottom:2px;
+	text-align:right;
+	margin-right:5px;
+	font-size:14px;
+	text-transform:uppercase;
+}
+
+div#popup:hover{
+	background-color: #fafafa;
+}
+
+nav#nav-principal{
+	border: solid 3px;
+	border-color: 3f3f3f;
+	background: #cc9933; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cc9933 0%, #ffff99 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #cc9933 0%,#ffff99 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #cc9933 0%,#ffff99 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc9933', endColorstr='#ffff99',GradientType=0 ); /* IE6-9 */
+	margin: 0px -6px 0px -6px;
+}
+
+nav#nav-principal ul{
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	color: #222;
+}
+
+nav#nav-principal li{
+    display: inline;
+	margin: 0;
+	padding: 0px -5px 0px -5px;
+}
+nav#nav-principal li a{
+    text-decoration: none;
+	color: #222;
+	padding: 0px 5px 1px 5px;
+}
+
+nav#nav-principal li a:hover{
+    background: #cc9933;
+	color: #fff;
+}
+
+section{
+	margin: -90px 5px 0px 5px;
+	margin: 0px 15% 0px 15%;
+	text-align: center;
+	height: 100%;
+	max-height:10px;
+}
+
+section div#content{
+	text-align: justify;
+	background:#EEEEEE;
+	margin: 0px 6px 2px 6px;
+	padding: 5px;
+	min-height: 400px;
+}
+
+section div#nocontent{
+	text-align: center;
+	color: #EEEEEE;
+	margin: 200px 6px 2px 6px;
+	min-height: 400px;
+}
+
+section div#nocontent div#label{
+	font-size:18px;
+	font-weight:100;
+}
+
+section div#nocontent div.container{
+	font-size:14px;
+}
+
+section div#nocontent span.alterchar{
+	font-size:10px;
+}
+
+section div#nocontent span#restpwd a{
+	font-size:10px;
+	text-decoration: underline;
+	color:#fff;
+}
+
+section div#nocontent span#restpwd a:hover{
+	text-decoration: none;
+	color:#aaa;
+}
+
+footer{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background-color:3f3f3f;
+	margin-left: -6px;
+	margin-right: 0px;
+	border-top: solid 1px;
+	border-color: rgba(255,255,255, 0.6);
+	color: #ffffff;
+	font-size: 10px;
+/*	font-weight: 100;*/
+	font-family: "Arial Black", Gadget, sans-serif;
+	text-align: center;
+	text-decoration: underline;
+}
