@@ -12,6 +12,7 @@ $siteviewport="width=device-width, initial-scale=1.0";
 
 $themepatch = "/_layout/css/";
 $theme="default";
+$scriptpatch = "/_layout/js/";
 
 $sitefooter="Pirâmide do Coringa&copy;&reg;" . $defaultseparator . date("Y");
 

@@ -6,12 +6,12 @@
 					<div id='label'>LOGIN</div>
 				 	<div class='container'>
 			    	<label>Usuário:</label>
-			    	<input type='text' placeholder='Digite seu usuário' name='user' required>
+			    	<input type='text' placeholder='  => CPF <=' name='user' required>
 					<p>
 				    <label>Senha:</label>
-				    <input type='password' placeholder='Digite a senha' name='pass' required>
-					<p>
-				    <span class='alterchar'><input type='checkbox' checked='checked'> Lembrar-se de mim</span>
+				    <input type='password' placeholder='  => SENHA <=' name='pass' required>
+					<!--<p>
+				    <span class='alterchar'><input type='checkbox' checked='checked'> Lembrar-se de mim</span>-->
 				    </div>
 					<div class='container'>
 				    <button type='submit'>Entrar</button>
