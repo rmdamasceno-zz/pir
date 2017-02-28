@@ -1,7 +1,7 @@
-﻿<?php
+<?php
 	$acesslevel="user";
 	$readmenu="yes";
-	$title = "";
-	$mainconent = "pg financeiro</br><a href='http://piramidedocoringa.com/_logon'>LOGON</a>";
+	$title="Financeiro";
+	$mainconent='<p>pg financeiro</p>
+<p>incluir conteudo</p>';
 ?>
-

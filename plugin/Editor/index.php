@@ -8,8 +8,9 @@
 		$contentedit = $_POST['patchedit'];
 		//$contentedit = $_SERVER['DOCUMENT_ROOT']."/_help/content.php";
 		
-		include $contentedit;	
-		if ($readmenu = 'yes'){ $pagereadmenutrue = 'checked';}else{$pagereadmenufalse = 'checked';};
+		include $contentedit.'content.php';	
+		
+		if ($readmenu == "yes"){ $pagereadmenutrue = 'checked';}else{$pagereadmenufalse = 'checked';};
 		$pageacesslevel = $acesslevel;
 		$pagetitle = $title;
 		$pagemainconent = $mainconent;

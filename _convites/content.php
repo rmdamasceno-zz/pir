@@ -1,7 +1,9 @@
-﻿<?php
+<?php
 	$acesslevel="user";
 	$readmenu="yes";
-	$title = "";
-	$mainconent = "pg convites</br><a href='http://piramidedocoringa.com/_logon'>LOGON</a>";
+	$title="Convites";
+	$mainconent='<p>pg convites</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>editado</p>';
 ?>
-

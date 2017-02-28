@@ -1,4 +1,5 @@
 <?php
+	$noedit = "1";
 	$acesslevel="user";
 	$readmenu="yes";
 	$title="Editor de Páginas";
@@ -8,7 +9,7 @@
 		<script>
 			tinymce.init({
 				selector: 'textarea',  // change this value according to your HTML
-				resize: false,
+				resize: true,
 			    toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons',
 				menu: {
 					file: {title: 'File', items: 'newdocument'},
@@ -28,12 +29,12 @@
 		</script>
 	</head>
 	<body>
-		<form method='post'>
+		<form method='post' action='savepage.php'>
 			<input type='hidden' name='page' value='$contentedit'></input>
-			<textarea id='mytextarea'>$pagemainconent</textarea>
+			<textarea id='mytextarea' name='content'>$pagemainconent</textarea>
 			<p><label>Título da Página: </label><input type='text' name='title' value='$pagetitle'></input></p>
 			<p><label>Nível de Acesso: </label><input type='text' name='levelaccess' value='$pageacesslevel'></input></p>
-			<p><label>Habilita Menu? </label><input type='checkbox' name='menu' value='1' $pagereadmenutrue> SIM </input><input type='checkbox' name='menu' value='0' $pagereadmenufalse> NÃO</input></p>
+			<p><label>Habilita Menu? </label><input type='radio' name='menu' value='1' $pagereadmenutrue> SIM </input><input type='radio' name='menu' value='0' $pagereadmenufalse> NÃO</input></p>
 			<p><button type='submit'>Salvar</button></p>
 		</form>
 	</body>

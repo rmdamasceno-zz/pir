@@ -1,21 +1,13 @@
-﻿<?php
+<?php
 	$acesslevel="annonymous";
 	$readmenu="no";
-	$title = "Logon";
-	$mainconent = "	<form action='\_secur\auth.php' method='post'>
-					<div id='label'>LOGIN</div>
-				 	<div class='container'>
-			    	<label>Usuário:</label>
-			    	<input type='text' placeholder='  => CPF <=' name='user' required>
-					<p>
-				    <label>Senha:</label>
-				    <input type='password' placeholder='  => SENHA <=' name='pass' required>
-					<!--<p>
-				    <span class='alterchar'><input type='checkbox' checked='checked'> Lembrar-se de mim</span>-->
-				    </div>
-					<div class='container'>
-				    <button type='submit'>Entrar</button>
-				    <span class='alterchar' id='restpwd'> <a href='#'>Esqueci minha senha</a></span>
-				    </div>
-					</form>";
+	$title="Logon";
+	$mainconent='<form action="\_secur\auth.php" method="post">
+<div id="label">LOGIN</div>
+<div class="container"><label>Usu&aacute;rio:</label> <input name="user" required="" type="text" placeholder="  =&gt; CPF &lt;=" />
+<p><label>Senha:</label> <input name="pass" required="" type="password" placeholder="  =&gt; SENHA &lt;=" /> <!--<p>
+				    <span class="alterchar"><input type="checkbox" checked="checked"> Lembrar-se de mim</span>--></p>
+</div>
+<div class="container"><button type="submit">Entrar</button> <span id="restpwd" class="alterchar"> <a href="#">Esqueci minha senha</a></span></div>
+</form>';
 ?>
