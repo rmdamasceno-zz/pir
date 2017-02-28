@@ -34,5 +34,6 @@
 </section>
 <footer>
 	<?php	include ($_SERVER['DOCUMENT_ROOT']."/_layout/block/bodyparts/footer.php");	?>
+	<?php	include ($_SERVER['DOCUMENT_ROOT']."/_layout/block/bodyparts/admin.php");	?>
 </footer>
 </body>
