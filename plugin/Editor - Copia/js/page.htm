@@ -1,11 +1,5 @@
-<?php
-	$noedit = "1";
-	$acesslevel="user";
-	$readmenu="yes";
-	$title="Editor de Páginas";
-	$mainconent="
-	<head>
-		<script src='js/tinymce.min.js'></script>
+<head>
+		<script src='tinymce.min.js'></script>
 		<script>
 			tinymce.init({
 				selector: 'textarea',  // change this value according to your HTML
@@ -14,10 +8,10 @@
 				image_advtab: true,
 				paste_data_images: true,
 				paste_as_text: true,
-				imagetools_toolbar: 'rotateleft rotateright | flipv fliph | editimage imageoptions',
+				imagetools_toolbar: "rotateleft rotateright | flipv fliph | editimage imageoptions",
 			    toolbar: 'fullpage codesample insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | preview media | forecolor backcolor',
-				insertdatetime_dateformat: '%d-%m-%Y',
-				contextmenu: 'link image inserttable | cell row column deletetable',
+				insertdatetime_dateformat: "%d-%m-%Y",
+				contextmenu: "link image inserttable | cell row column deletetable",
 				menu: {
 					file: {title: 'File', items: 'newdocument'},
 					edit: {title: 'Edit', items: 'undo redo | cut copy paste pastetext | selectall searchreplace'},
@@ -52,14 +46,10 @@
 		</script>
 	</head>
 	<body>
-		<form method='post' action='savepage.php'>
-			<input type='hidden' name='page' value='$contentedit'></input>
-			<textarea id='mytextarea' name='content'>$pagemainconent</textarea>
-			<p><label>Título da Página: </label><input type='text' name='title' value='$pagetitle'></input></p>
-			<p><label>Nível de Acesso: </label><input type='text' name='levelaccess' value='$pageacesslevel'></input></p>
-			<p><label>Habilita Menu? </label><input type='radio' name='menu' value='1' $pagereadmenutrue> SIM </input><input type='radio' name='menu' value='0' $pagereadmenufalse> NÃO</input></p>
-			<p><button type='submit'>Salvar</button></p>
+		<form method='post'>
+
+			<textarea id='mytextarea' name='content'></textarea>
+			
 		</form>
 	</body>
-	";
-?>
+	
