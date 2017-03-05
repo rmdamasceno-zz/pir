@@ -1,5 +1,97 @@
 @charset "utf-8";
 /* CSS Document */
+@media only screen and (min-width: 534px) {
+
+nav#nav-principal{
+	border: solid 3px;
+	border-color: 3f3f3f;
+	background: #cc9933; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cc9933 0%, #ffff99 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #cc9933 0%,#ffff99 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #cc9933 0%,#ffff99 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc9933', endColorstr='#ffff99',GradientType=0 ); /* IE6-9 */
+	margin: 0px -6px 0px -6px;
+}
+
+nav#nav-principal ul{
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	color: #222;
+}
+
+nav#nav-principal li.menutitle{
+	display: none;
+}
+
+nav#nav-principal li{
+    display: inline;
+	margin: 0;
+	padding: 0px -5px 0px -5px;
+}
+nav#nav-principal li a{
+	display: inline;
+    text-decoration: none;
+	color: #222;
+	padding: 0px 5px 1px 5px;
+}
+
+nav#nav-principal li a:hover{
+    background: #cc9933;
+	color: #fff;
+}
+
+}
+@media only screen and (max-width: 533.99px) {
+nav#nav-principal{
+	border: solid 3px;
+	border-color: 3f3f3f;
+	background: #cc9933; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cc9933 0%, #ffff99 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #cc9933 0%,#ffff99 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #cc9933 0%,#ffff99 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc9933', endColorstr='#ffff99',GradientType=0 ); /* IE6-9 */
+	margin: 0px -6px 0px -6px;
+}
+
+nav#nav-principal ul{
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	color: #222;
+}
+
+nav#nav-principal li.menutitle{
+	display: block;
+    text-decoration: none;
+	padding: 0px 5px 1px 5px;
+    background: #cc9933;
+	color: #fff;
+}
+
+nav#nav-principal li.divisor{
+	display:none;
+}
+
+nav#nav-principal li.hidemenuitem a{
+	display: none;
+}
+
+nav#nav-principal li.menuitem a{
+	display: none;
+    text-decoration: none;
+	color: #222;
+	padding: 0px 5px 1px 5px;
+}
+
+nav#nav-principal li a:hover{
+    background: #cc9933;
+	color: #fff;
+}
+
+}
 
 body {
 	background-color:3f3f3f;
@@ -26,8 +118,9 @@ div#popup {
 	position:absolute;
 	top:0px;
 	right:0px;
-	width:200px;
-	height:66px;
+	width:100%;
+	max-width: 230px;
+	height:17px;
     background-color: #EEEEEE;
 	border: solid 2px #aaa;
 	font-size:13px;
@@ -39,51 +132,17 @@ div#popup a{
 }
 
 div#popup span#sair a{
-	display:block;
-	bottom:2px;
-	text-align:right;
-	margin-right:5px;
-	font-size:14px;
-	text-transform:uppercase;
+	display: block;
+	/*bottom:2px;*/
+	text-align: right;
+	/*margin-right:5px;*/
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: -13px;
 }
 
 div#popup:hover{
 	background-color: #fafafa;
-}
-
-nav#nav-principal{
-	border: solid 3px;
-	border-color: 3f3f3f;
-	background: #cc9933; /* Old browsers */
-	background: -moz-linear-gradient(top,  #cc9933 0%, #ffff99 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  #cc9933 0%,#ffff99 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  #cc9933 0%,#ffff99 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc9933', endColorstr='#ffff99',GradientType=0 ); /* IE6-9 */
-	margin: 0px -6px 0px -6px;
-}
-
-nav#nav-principal ul{
-	list-style:none;
-	margin: 0px;
-	padding: 0px;
-	text-align: center;
-	color: #222;
-}
-
-nav#nav-principal li{
-    display: inline;
-	margin: 0;
-	padding: 0px -5px 0px -5px;
-}
-nav#nav-principal li a{
-    text-decoration: none;
-	color: #222;
-	padding: 0px 5px 1px 5px;
-}
-
-nav#nav-principal li a:hover{
-    background: #cc9933;
-	color: #fff;
 }
 
 section{

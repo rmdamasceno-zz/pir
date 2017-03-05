@@ -1,7 +1,7 @@
 <?php
 	function QUERY_EXEC ($query,$values,$method){
 		try{
-			$conn = new PDO('mysql:host=localhost;dbname=db01', 'root', '');
+			$conn = new PDO('mysql:host=localhost;dbname=thejo428_pc', 'root', '');
 		}catch(PDOException $e){
 			echo "<script>alert('Erro interno de Conexão!');history.go(-1) </script>";
 		}

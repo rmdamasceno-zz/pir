@@ -8,8 +8,4 @@
 				</form>";
 		}
 	}
-
-function useradm($user,$pas){
-	return True;
-}
 ?>

@@ -7,7 +7,7 @@
 			header('Location: \_logon ');
 		}
 		if (!getpwhash($_SESSION['hashpw'],$_SESSION['user'])){
-			
+			parsession($_SESSION['user']);
 		}
 	}
 ?>

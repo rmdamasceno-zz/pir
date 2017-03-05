@@ -3,4 +3,5 @@
 	require ($thispatch . "/content.php");
 	require ($_SERVER['DOCUMENT_ROOT']."/_secur/valida.php");
 	include ($_SERVER['DOCUMENT_ROOT']."/_layout/default.php");
+	include ($_SERVER['DOCUMENT_ROOT']."/_layout/js/calendario.php");
 ?>

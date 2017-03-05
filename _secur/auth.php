@@ -22,6 +22,7 @@
 			//echo "</br>senha do $|hashpw decriptada = ".$hashpw;
 			
 			if (getpwhash($hashpw,$_SESSION['user'])){
+				$_SESSION['mes'] = 'logado';
 				echo "<meta http-equiv='refresh' content='0;URL=\' />";
 				//echo "</br></br></br>A senha foi validada como correta!";
 			}else{
