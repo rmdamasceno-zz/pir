@@ -2,9 +2,14 @@
 	$acesslevel="user";
 	$readmenu="yes";
 	$title="";
-	$mainconent='<body>
-<p>P&aacute;gina de boas vindas!!</p>
-<p>Not&iacute;cias gerais</p>
-</body>
+	$mainconent='<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>Teste de conteudo de p&aacute;gina</p>
+<p>esta p&aacute;gina n&atilde;o possui formata&ccedil;&atilde;o</p>
+<p>acessar pagina de&nbsp;<a href="../../_logon">LOGON</a></p>
+</body>
 </html>';
 ?>

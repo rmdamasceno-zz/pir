@@ -8,7 +8,7 @@
 	//função para comparar hash da senha digitada e da senha correta
 	function getpwhash($hpwd,$user){
 		$pwd = getpwd($user);
-		//echo $pwd;
+		//echo '</br> retorno do getpw em getpwhash  '.$pwd;
 		//caso um usuário seja removido e esteja logado, o mesmo será desconectado
 		if ($pwd == ''){ return false;};
 		return hash_equals($hpwd, $pwd);
@@ -55,12 +55,14 @@
 	}
 	
 	function getpwd($user){
-		$query = "SELECT TX_PWD_PESSOA FROM PESSOA WHERE ID_CPF_PESSOA = :user AND ID_PESSOA > :id";
+		$query = "SELECT TX_PWD_PESSOA FROM pessoa WHERE ID_CPF_PESSOA = :user AND ID_PESSOA > :id";
 		$values = array(
 			':user' => $user,
 			':id' => 1,
 		);
+		//echo '</br> user em getpw '.$user;
 		$result = QUERY_EXEC($query,$values,1);
+		//print_r ($result);
 		return $result[0];
 	}
 	function useradm($user,$pas){
@@ -81,7 +83,7 @@
 		}
 	}
 	function loccod($cod){
-		$query = "SELECT count(1) FROM PESSOA WHERE TX_COD_PESSOA = :cod AND ID_PESSOA > :id";
+		$query = "SELECT count(1) FROM pessoa WHERE TX_COD_PESSOA = :cod AND ID_PESSOA > :id";
 		$values = array(
 			':cod' => $cod,
 			':id' => 1,
@@ -90,7 +92,7 @@
 		return $result[0];
 	}
 	function parsession($user){
-		$query = "SELECT NM_PRI_PESSOA, NM_SEC_PESSOA, IN_SEX_PESSOA, TX_COD_PESSOA FROM PESSOA WHERE ID_CPF_PESSOA = :user AND ID_PESSOA > :id";
+		$query = "SELECT NM_PRI_PESSOA, NM_SEC_PESSOA, IN_SEX_PESSOA, TX_COD_PESSOA FROM pessoa WHERE ID_CPF_PESSOA = :user AND ID_PESSOA > :id";
 		$values = array(
 			':user' => $user,
 			':id' => 1,
@@ -100,6 +102,46 @@
 		$_SESSION['lname'] = $result[1];
 		$_SESSION['code'] = $result[3];
 		$_SESSION['sex'] = $result[2];
+	}
+	function validacpf($cpf){
+        $sum = 0;
+		$remove = array(".", "-");
+		$inclui = array("", "");
+
+        $cpf = str_replace($remove, $inclui, $cpf);
+            
+		if(strlen($cpf) != 11 || 
+			$cpf == "00000000000" ||
+            $cpf == "11111111111" ||
+            $cpf == "22222222222" ||
+            $cpf == "33333333333" ||
+            $cpf == "44444444444" ||
+            $cpf == "55555555555" ||
+            $cpf == "66666666666" ||
+            $cpf == "77777777777" ||
+            $cpf == "88888888888" ||
+            $cpf == "99999999999"){ 
+			return false;
+		}
+        for ($i = 1; $i <= 9; $i++){
+            $sum = $sum + intval(substr ($cpf, $i - 1, $i)) * (11 - $i);
+		}
+        $remainder = ($sum * 10) % 11;
+
+        if (($remainder == 10) || ($remainder == 11))
+            $remainder = 0;
+        if ($remainder != intval(substr ($cpf,9, 10)))
+            return false;
+
+        $sum = 0;
+        for ($i = 1; $i <= 10; $i++)
+            $sum = $sum + intval(substr ($cpf, $i - 1, $i)) * (12 - $i); $remainder = ($sum * 10) % 11;
+
+        if (($remainder == 10) || ($remainder == 11))
+            $remainder = 0;
+        if ($remainder != intval(substr ($cpf, 10, 11)))
+            return false;
+        return true;
 	}
 ?>
 

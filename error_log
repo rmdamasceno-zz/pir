@@ -1,0 +1,45 @@
+[28-Feb-2017 11:43:15 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/thejo428/public_html/_secur/_con/connection.php:10
+Stack trace:
+#0 /home/thejo428/public_html/_functions/functions.php(57): QUERY_EXEC('SELECT TX_PWD_P...', Array, 1)
+#1 /home/thejo428/public_html/_functions/functions.php(10): getpwd(NULL)
+#2 /home/thejo428/public_html/_secur/valida.php(9): getpwhash(NULL, NULL)
+#3 /home/thejo428/public_html/index.php(4): require('/home/thejo428/...')
+#4 {main}
+  thrown in /home/thejo428/public_html/_secur/_con/connection.php on line 10
+[28-Feb-2017 11:54:27 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[28-Feb-2017 11:55:12 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[28-Feb-2017 12:14:45 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[28-Feb-2017 12:17:31 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[28-Feb-2017 12:29:55 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[28-Feb-2017 12:31:42 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[28-Feb-2017 12:34:05 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[28-Feb-2017 12:45:29 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[28-Feb-2017 15:08:25 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[28-Feb-2017 16:15:44 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[28-Feb-2017 16:26:29 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[28-Feb-2017 21:10:58 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[28-Feb-2017 21:11:08 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[01-Mar-2017 16:49:19 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[01-Mar-2017 16:50:52 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[01-Mar-2017 16:50:52 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[01-Mar-2017 16:56:38 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[01-Mar-2017 18:38:10 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[02-Mar-2017 01:34:27 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[04-Mar-2017 10:14:51 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[04-Mar-2017 18:07:37 America/Chicago] PHP Warning:  hash_equals(): Expected known_string to be a string, null given in /home/thejo428/public_html/_functions/functions.php on line 12
+[04-Mar-2017 18:36:38 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/thejo428/public_html/_secur/_con/connection.php:10
+Stack trace:
+#0 /home/thejo428/public_html/_functions/functions.php(63): QUERY_EXEC('SELECT TX_PWD_P...', Array, 1)
+#1 /home/thejo428/public_html/_functions/functions.php(10): getpwd('40882492837')
+#2 /home/thejo428/public_html/_secur/valida.php(9): getpwhash('wOXOBjz2I/5zUqH...', '40882492837')
+#3 /home/thejo428/public_html/index.php(4): require('/home/thejo428/...')
+#4 {main}
+  thrown in /home/thejo428/public_html/_secur/_con/connection.php on line 10
+[04-Mar-2017 18:36:54 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/thejo428/public_html/_secur/_con/connection.php:10
+Stack trace:
+#0 /home/thejo428/public_html/_functions/functions.php(63): QUERY_EXEC('SELECT TX_PWD_P...', Array, 1)
+#1 /home/thejo428/public_html/_functions/functions.php(10): getpwd('40882492837')
+#2 /home/thejo428/public_html/_secur/valida.php(9): getpwhash('wOXOBjz2I/5zUqH...', '40882492837')
+#3 /home/thejo428/public_html/index.php(4): require('/home/thejo428/...')
+#4 {main}
+  thrown in /home/thejo428/public_html/_secur/_con/connection.php on line 10
