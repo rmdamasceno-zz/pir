@@ -1,0 +1,247 @@
+@charset "utf-8";
+/* CSS Document */
+@media only screen and (min-width: 534px) {
+
+nav#nav-principal{
+	border: solid 3px;
+	border-color: 3f3f3f;
+	background: #cc9933; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cc9933 0%, #ffff99 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #cc9933 0%,#ffff99 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #cc9933 0%,#ffff99 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc9933', endColorstr='#ffff99',GradientType=0 ); /* IE6-9 */
+	margin: 0px -6px 0px -6px;
+}
+
+nav#nav-principal ul{
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	color: #222;
+}
+
+nav#nav-principal li.menutitle{
+	display: none;
+}
+
+nav#nav-principal li{
+    display: inline;
+	margin: 0;
+	padding: 0px -5px 0px -5px;
+}
+nav#nav-principal li a{
+	display: inline;
+    text-decoration: none;
+	color: #222;
+	padding: 0px 5px 1px 5px;
+}
+
+nav#nav-principal li a:hover{
+    background: #cc9933;
+	color: #fff;
+}
+
+}
+@media only screen and (max-width: 533.99px) {
+nav#nav-principal{
+	border: solid 3px;
+	border-color: 3f3f3f;
+	background: #cc9933; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cc9933 0%, #ffff99 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #cc9933 0%,#ffff99 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #cc9933 0%,#ffff99 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc9933', endColorstr='#ffff99',GradientType=0 ); /* IE6-9 */
+	margin: 0px -6px 0px -6px;
+}
+
+nav#nav-principal ul{
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	color: #222;
+}
+
+nav#nav-principal li.menutitle{
+	display: block;
+    text-decoration: none;
+	padding: 0px 5px 1px 5px;
+    background: #cc9933;
+	color: #fff;
+}
+
+nav#nav-principal li.divisor{
+	display:none;
+}
+
+nav#nav-principal li.hidemenuitem a{
+	display: none;
+}
+
+nav#nav-principal li.menuitem a{
+	display: none;
+    text-decoration: none;
+	color: #222;
+	padding: 0px 5px 1px 5px;
+}
+
+nav#nav-principal li a:hover{
+    background: #cc9933;
+	color: #fff;
+}
+
+}
+
+body {
+	background-color:3f3f3f;
+}
+
+header ,header a{
+	background-color:3f3f3f;
+	text-decoration: none;
+	position: relative;
+	top: 0px;
+	width: 100%;
+	/* padding: 8px; */
+	margin: -6px 0px 0px -6px;
+	color:#CC9933;
+	font-size:24px;
+	font-weight:100;
+	font-family:"Arial Black", Gadget, sans-serif;
+	text-align: center;
+	text-transform:uppercase;
+}
+
+div#popup {
+	display:block;
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:100%;
+	max-width: 230px;
+	height:17px;
+    background-color: #EEEEEE;
+	border: solid 2px #aaa;
+	font-size:13px;
+}
+
+div#popup a{
+	text-decoration:underline;
+	color:#222;
+}
+
+div#popup span#sair a{
+	display: block;
+	/*bottom:2px;*/
+	text-align: right;
+	/*margin-right:5px;*/
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: -13px;
+}
+
+div#popup:hover{
+	background-color: #fafafa;
+}
+
+section{
+	margin: -90px 5px 0px 5px;
+	margin: 0px 15% 0px 15%;
+	text-align: center;
+	height: 100%;
+	max-height:10px;
+}
+
+section div#content{
+	text-align: justify;
+	background:#EEEEEE;
+	margin: 0px 6px 2px 6px;
+	padding: 5px;
+	min-height: 400px;
+}
+
+section div#nocontent{
+	text-align: center;
+	color: #EEEEEE;
+	margin: 200px 6px 2px 6px;
+	min-height: 400px;
+}
+
+form#formLogin{
+	background-color:#ddd;
+	width:100%;
+}
+
+form#formLogin table#maintableLogin{
+	width:50%;
+	margin: 0 auto;
+}
+
+form#formLogin table#maintableLogin  td#idmenssagem{
+	text-align: center;
+	color:#F00;
+	font-weight:bolder;
+	text-shadow: 2px 1px 4px rgba(150, 150, 150, 1);
+	font-size:12px;
+	text-transform:uppercase;
+}
+
+form#formLogin table#maintableLogin td.tdleft{
+	text-align:right;
+}
+
+form#formLogin table#maintableLogin input{
+	width:100%;
+	text-align:left;
+}
+
+form#formLogin table#maintableLogin a{
+	display:block;
+	float:right;
+	text-align:left;
+	color:#000;
+	text-shadow: 2px 1px 4px rgba(150, 150, 150, 1);
+	font-size:11px;
+}
+/*
+section div#nocontent div#label{
+	font-size:18px;
+	font-weight:100;
+}
+
+section div#nocontent div.container{
+	font-size:14px;
+}
+
+section div#nocontent span.alterchar{
+	font-size:10px;
+}
+
+section div#nocontent span#restpwd a{
+	font-size:10px;
+	text-decoration: underline;
+	color:#fff;
+}
+
+section div#nocontent span#restpwd a:hover{
+	text-decoration: none;
+	color:#aaa;
+}
+*/
+footer{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background-color:3f3f3f;
+	margin-left: -6px;
+	margin-right: 0px;
+	border-top: solid 1px;
+	border-color: rgba(255,255,255, 0.6);
+	color: #ffffff;
+	font-size: 10px;
+/*	font-weight: 100;*/
+	font-family: "Arial Black", Gadget, sans-serif;
+	text-align: center;
+	text-decoration: underline;
+}
